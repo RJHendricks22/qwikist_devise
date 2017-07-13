@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'workouts/agreement:references'
+
+  get 'workouts/gym:references'
+
+  get 'workout/agreement:references'
+
+  get 'workout/gym:references'
+
   devise_for :clients
   devise_for :trainers
   devise_for :gyms
